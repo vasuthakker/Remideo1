@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <size android:width="40dp" android:height="40dp"/>
+
+    <solid android:color="#60BFBFBF"/>
+</shape>
+<!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/camTest/src/main/res/drawable/grey_round.xml -->

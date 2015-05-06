@@ -1,0 +1,4 @@
+include ':horizontalListView'
+include ':tooltipLibrary'
+include ':aviarySDK'
+include ':camTest'

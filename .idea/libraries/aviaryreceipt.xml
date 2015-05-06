@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="aviaryreceipt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/aviarySDK/libs/aviaryreceipt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.remedeo.remedeoapp"
+    android:versionCode="12"
+    android:versionName="2.51" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="20" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- The Aviary SDK doesn't support small screens -->
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launch_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.GridViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.FullImageActivity"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.TakePicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.aviary.android.feather.sdk.FeatherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:largeHeap="true"
+            android:process=":aviarysdk"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AviaryTheme.Dark" />
+
+        <service
+            android:name="com.aviary.android.feather.cds.AviaryCdsService"
+            android:exported="false"
+            android:process=":aviarycds" >
+            <intent-filter>
+                <action android:name="aviary.intent.action.CDS_DOWNLOAD_START" />
+                <action android:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.aviary.android.feather.cds.AviaryCdsProvider"
+            android:authorities="com.remedeo.remedeoapp.AviaryCdsProvider"
+            android:exported="false"
+            android:process=":aviarycds"
+            android:syncable="true" />
+
+        <receiver
+            android:name="com.aviary.android.feather.cds.AviaryCdsReceiver"
+            android:process=":aviarycds" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <!--
+        <receiver
+            android:name="com.aviary.android.feather.library.receivers.AviarySystemReceiver"
+            android:exported="true"
+            android:process=":aviary_standalone_system_receiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <meta-data
+            android:name="com.aviary.android.feather.v1.API_KEY"
+            android:value="1323a26fd558f003" />
+
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.RGBActivity"
+            android:label="@string/title_activity_rgb"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="76f84191b2211b9ae292e972235130da8bc5812c" />
+
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.PDFViewActivity"
+            android:label="@string/title_activity_pdfview"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.FullVideoActivity"
+            android:label="@string/title_activity_full_video" >
+        </activity>
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.DisplayDirectoriesActivity"
+            android:label="@string/title_activity_display_directories"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.AngleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.CameraActivity"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name="com.remedeo.remedeoapp.activities.AdminActivity"
+            android:label="@string/title_activity_admin"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

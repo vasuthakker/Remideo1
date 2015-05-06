@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/endpoint_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp" >
+
+        <ImageView
+            android:id="@+id/end_main"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/endpoint" />
+
+        <RelativeLayout
+            android:id="@+id/scale_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/dotted_bg" />
+
+            <ImageView
+                android:id="@+id/x_minus_imageview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/end_main"
+                android:src="@drawable/minus" />
+
+            <ImageView
+                android:id="@+id/x_plus_imageview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/y_plus_imageview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_above="@+id/end_main"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/y_minus_imageview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/minus" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

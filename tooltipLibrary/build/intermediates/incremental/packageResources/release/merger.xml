@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Vasu\StudioProjects\CamTest\tooltipLibrary\src\main\res"><file name="tooltip_textview" path="C:\Users\Vasu\StudioProjects\CamTest\tooltipLibrary\src\main\res\layout\tooltip_textview.xml" qualifiers="" type="layout"/><file path="C:\Users\Vasu\StudioProjects\CamTest\tooltipLibrary\src\main\res\values\ttlm_attrs.xml" qualifiers=""><attr format="reference" name="ttlm_defaultStyle"/><declare-styleable name="TooltipLayout">
+		<attr format="dimension" name="ttlm_padding"/>
+		<attr format="color" name="ttlm_strokeColor"/>
+		<attr format="color" name="ttlm_backgroundColor"/>
+		<attr format="dimension" name="ttlm_strokeWeight"/>
+		<attr format="dimension" name="ttlm_cornerRadius"/>
+		<attr format="float" name="ttlm_arrowRatio"/>
+	</declare-styleable></file><file path="C:\Users\Vasu\StudioProjects\CamTest\tooltipLibrary\src\main\res\values\ttlm_colors.xml" qualifiers=""><color name="ttlm_default_stroke_color">#FFE9ECEF</color><color name="ttlm_default_background_color">#EE131518</color></file><file path="C:\Users\Vasu\StudioProjects\CamTest\tooltipLibrary\src\main\res\values\ttlm_dimens.xml" qualifiers=""><dimen name="ttlm_default_corner_radius">4dip</dimen><dimen name="ttlm_default_stroke_weight">1.3sp</dimen><dimen name="ttlm_default_padding">20dip</dimen></file><file path="C:\Users\Vasu\StudioProjects\CamTest\tooltipLibrary\src\main\res\values\ttlm_styles.xml" qualifiers=""><style name="ToolTipLayoutDefaultStyle">
+		<item name="ttlm_padding">@dimen/ttlm_default_padding</item>
+		<item name="ttlm_strokeColor">@color/ttlm_default_stroke_color</item>
+		<item name="ttlm_backgroundColor">@color/ttlm_default_background_color</item>
+		<item name="ttlm_strokeWeight">@dimen/ttlm_default_stroke_weight</item>
+		<item name="ttlm_cornerRadius">@dimen/ttlm_default_corner_radius</item>
+		<item name="ttlm_arrowRatio">1.4</item>
+	</style></file></source><source path="C:\Users\Vasu\StudioProjects\CamTest\tooltipLibrary\build\generated\res\rs\release"/><source path="C:\Users\Vasu\StudioProjects\CamTest\tooltipLibrary\build\generated\res\generated\release"/></dataSet><dataSet config="release"><source path="C:\Users\Vasu\StudioProjects\CamTest\tooltipLibrary\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="TooltipLayout"><attr format="dimension" name="ttlm_padding"/><attr format="color" name="ttlm_strokeColor"/><attr format="color" name="ttlm_backgroundColor"/><attr format="dimension" name="ttlm_strokeWeight"/><attr format="dimension" name="ttlm_cornerRadius"/><attr format="float" name="ttlm_arrowRatio"/></declare-styleable></configuration></mergedItems></merger>

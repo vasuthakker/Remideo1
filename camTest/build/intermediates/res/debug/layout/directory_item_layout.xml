@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dir_layout"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/folder" />
+
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="25dp" -->
+        <!-- android:layout_alignParentBottom="true" -->
+        <!-- android:background="@drawable/shadow" > -->
+        <!-- </RelativeLayout> -->
+
+        <TextView
+            android:id="@+id/diectory_item_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/camTest/src/main/res/layout/directory_item_layout.xml -->

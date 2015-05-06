@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_box"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="@string/dialog_rearrange_title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/green" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background="@color/green" />
+
+    <GridView
+        android:id="@+id/arrangeGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnlayout"
+        android:layout_below="@+id/view1"
+        android:layout_margin="10dp"
+        android:numColumns="auto_fit"
+        android:columnWidth="140dp" >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        
+        
+        <Button
+            android:id="@+id/arrangecancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+          android:layout_weight="0.6"
+            android:text="Clear Selection"
+            android:textColor="@color/tab_green"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/arrangeok"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="OK"
+            android:textColor="@color/tab_green"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/camTest/src/main/res/layout/dialog_rearrange.xml -->

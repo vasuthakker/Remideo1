@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/camera_recording_minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:text="TextView"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/effectListView"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cam_button_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/zoom_seekbar"
+        android:background="@drawable/effect_bg"
+        android:divider="@android:color/transparent"
+        android:visibility="gone" >
+    </ListView>
+
+    <Button
+        android:id="@+id/switchCamera"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/change_camera" />
+
+    <SeekBar
+        android:id="@+id/zoom_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/switchCamera"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/switchCamera"
+        android:layout_toRightOf="@+id/changeFocusImageView" />
+
+    <ImageView
+        android:id="@+id/focusImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/focused"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/cam_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" >
+
+        <Button
+            android:id="@+id/startbutton"
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/setting"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/flashbutton"
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/startbutton"
+            android:background="@drawable/flash_off"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/stopbutton"
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/exposure" />
+
+        <Button
+            android:id="@+id/isoButton"
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/stopbutton"
+            android:background="@drawable/iso" />
+
+        <SeekBar
+            android:id="@+id/exposureSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/isoButton" />
+
+        <LinearLayout
+            android:id="@+id/isoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/isoButton"
+            android:visibility="gone" >
+
+            <RadioGroup
+                android:id="@+id/isoRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/isoAuto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/radio_selector"
+                    android:checked="true"
+                    android:padding="2dp"
+                    android:text="Auto"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/iso100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/radio_selector"
+                    android:padding="2dp"
+                    android:text="100"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/iso200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/radio_selector"
+                    android:padding="2dp"
+                    android:text="200"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/iso400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/radio_selector"
+                    android:padding="2dp"
+                    android:text="400"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/iso800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/radio_selector"
+                    android:padding="2dp"
+                    android:text="800"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/takepictureeffect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cam_button_layout"
+        android:background="@android:color/white"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cam_icon" />
+
+    <ImageView
+        android:id="@+id/changeFocusImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/switchCamera"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/focus_on" />
+
+    <ListView
+        android:id="@+id/isoListView"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cam_button_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/effect_bg"
+        android:choiceMode="singleChoice"
+        android:visibility="gone" >
+    </ListView>
+
+</RelativeLayout>

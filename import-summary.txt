@@ -1,0 +1,153 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Aviary-SDK:
+* .DS_Store
+From CamTest:
+* crashlytics.properties
+* desc.txt
+* ic_launcher-web.png
+* proguard-project.txt
+From HorizontalListView:
+* .DS_Store
+From TooltipLibrary:
+* .DS_Store
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:20.0.0
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:20.0.0
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:20.0.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In HorizontalListView:
+* AndroidManifest.xml => horizontalListView\src\main\AndroidManifest.xml
+* assets\ => horizontalListView\src\main\assets
+* res\ => horizontalListView\src\main\res\
+* src\ => horizontalListView\src\main\java\
+* src\.DS_Store => horizontalListView\src\main\resources\.DS_Store
+In TooltipLibrary:
+* AndroidManifest.xml => tooltipLibrary\src\main\AndroidManifest.xml
+* assets\ => tooltipLibrary\src\main\assets
+* libs\nineoldandroids-2.4.0.jar => tooltipLibrary\libs\nineoldandroids-2.4.0.jar
+* res\ => tooltipLibrary\src\main\res\
+* src\ => tooltipLibrary\src\main\java\
+* src\.DS_Store => tooltipLibrary\src\main\resources\.DS_Store
+* src\it\.DS_Store => tooltipLibrary\src\main\resources\it\.DS_Store
+* src\it\sephiroth\.DS_Store => tooltipLibrary\src\main\resources\it\sephiroth\.DS_Store
+* src\it\sephiroth\android\.DS_Store => tooltipLibrary\src\main\resources\it\sephiroth\android\.DS_Store
+* src\it\sephiroth\android\library\.DS_Store => tooltipLibrary\src\main\resources\it\sephiroth\android\library\.DS_Store
+In Aviary-SDK:
+* AndroidManifest.xml => aviarySDK\src\main\AndroidManifest.xml
+* assets\ => aviarySDK\src\main\assets\
+* libs\abtest.jar => aviarySDK\libs\abtest.jar
+* libs\annotations-12.0.jar => aviarySDK\libs\annotations-12.0.jar
+* libs\armeabi-v7a\libaviary_moalite.so => aviarySDK\src\main\jniLibs\armeabi-v7a\libaviary_moalite.so
+* libs\armeabi-v7a\libaviary_native.so => aviarySDK\src\main\jniLibs\armeabi-v7a\libaviary_native.so
+* libs\armeabi\libaviary_moalite.so => aviarySDK\src\main\jniLibs\armeabi\libaviary_moalite.so
+* libs\armeabi\libaviary_native.so => aviarySDK\src\main\jniLibs\armeabi\libaviary_native.so
+* libs\aviary-headless-library.jar => aviarySDK\libs\aviary-headless-library.jar
+* libs\aviary-sdk-library.jar => aviarySDK\libs\aviary-sdk-library.jar
+* libs\aviarycommon.jar => aviarySDK\libs\aviarycommon.jar
+* libs\aviaryreceipt.jar => aviarySDK\libs\aviaryreceipt.jar
+* libs\aviarytracking.jar => aviarySDK\libs\aviarytracking.jar
+* libs\cds.jar => aviarySDK\libs\cds.jar
+* libs\commons-io-2.4.jar => aviarySDK\libs\commons-io-2.4.jar
+* libs\commons-lang3-3.3.2.jar => aviarySDK\libs\commons-lang3-3.3.2.jar
+* libs\disklrumulticache.jar => aviarySDK\libs\disklrumulticache.jar
+* libs\exif.jar => aviarySDK\libs\exif.jar
+* libs\hlistviewanimations-library.jar => aviarySDK\libs\hlistviewanimations-library.jar
+* libs\imagezoom.jar => aviarySDK\libs\imagezoom.jar
+* libs\listviewanimations_lib-core_3.1.0.jar => aviarySDK\libs\listviewanimations_lib-core_3.1.0.jar
+* libs\localytics.jar => aviarySDK\libs\localytics.jar
+* libs\nineoldandroids-2.4.0.jar => aviarySDK\libs\nineoldandroids-2.4.0.jar
+* libs\okhttp-1.6.0.jar => aviarySDK\libs\okhttp-1.6.0.jar
+* libs\okhttp-urlconnection-1.6.0.jar => aviarySDK\libs\okhttp-urlconnection-1.6.0.jar
+* libs\picasso.jar => aviarySDK\libs\picasso.jar
+* libs\x86\libaviary_moalite.so => aviarySDK\src\main\jniLibs\x86\libaviary_moalite.so
+* libs\x86\libaviary_native.so => aviarySDK\src\main\jniLibs\x86\libaviary_native.so
+* lint.xml => aviarySDK\lint.xml
+* res\ => aviarySDK\src\main\res\
+* src\ => aviarySDK\src\main\java\
+* src\.DS_Store => aviarySDK\src\main\resources\.DS_Store
+* src\com\.DS_Store => aviarySDK\src\main\resources\com\.DS_Store
+* src\com\aviary\.DS_Store => aviarySDK\src\main\resources\com\aviary\.DS_Store
+* src\com\aviary\android\.DS_Store => aviarySDK\src\main\resources\com\aviary\android\.DS_Store
+* src\com\aviary\android\feather\.DS_Store => aviarySDK\src\main\resources\com\aviary\android\feather\.DS_Store
+* src\com\aviary\android\feather\sdk\.DS_Store => aviarySDK\src\main\resources\com\aviary\android\feather\sdk\.DS_Store
+In CamTest:
+* AndroidManifest.xml => camTest\src\main\AndroidManifest.xml
+* assets\ => camTest\src\main\assets\
+* libs\crashlytics.jar => camTest\libs\crashlytics.jar
+* libs\itextg-5.4.5.jar => camTest\libs\itextg-5.4.5.jar
+* libs\universal-image-loader-1.9.0.jar => camTest\libs\universal-image-loader-1.9.0.jar
+* lint.xml => camTest\lint.xml
+* res\ => camTest\src\main\res\
+* src\ => camTest\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

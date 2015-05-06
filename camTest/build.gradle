@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.remedeo.remedeoapp"
+        minSdkVersion 16
+        targetSdkVersion 20
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':aviarySDK')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:appcompat-v7:20.0.0'
+    compile files('libs/crashlytics.jar')
+    compile files('libs/itextg-5.4.5.jar')
+    compile files('libs/universal-image-loader-1.9.0.jar')
+}
