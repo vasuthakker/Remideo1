@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.aviary.android.feather.sdk.widget.ImageViewDrawableOverlay
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/aviary_overlay"
-    style="@style/AviaryWidget.StickerImageView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:scaleType="matrix" />
-<!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/aviarySDK/src/main/res/layout/aviary_content_stickers.xml --><!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/camTest/build/intermediates/exploded-aar/CamTest/aviarySDK/unspecified/res/layout/aviary_content_stickers.xml -->

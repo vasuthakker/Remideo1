@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/aviarySDK/src/main/res/values-normal-mdpi/aviary_config.xml -->
-    <eat-comment/>
-    <integer name="aviary_iap_dialog_height_weight">100</integer>
-</resources>

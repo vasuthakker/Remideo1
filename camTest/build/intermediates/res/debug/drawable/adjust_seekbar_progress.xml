@@ -1,9 +1,0 @@
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-
-	<item android:id="@android:id/background" android:drawable="@drawable/aviary_seekbar_progress_updated"/>
-
-	<item android:id="@android:id/progress" >
-		<clip android:drawable="@drawable/aviary_seekbar_background_updated" />
-	</item>
-
-</layer-list><!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/aviarySDK/src/main/res/drawable/adjust_seekbar_progress.xml --><!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/camTest/build/intermediates/exploded-aar/CamTest/aviarySDK/unspecified/res/drawable/adjust_seekbar_progress.xml -->

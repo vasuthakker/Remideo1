@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/camTest/build/intermediates/exploded-aar/CamTest/aviarySDK/unspecified/res/values-normal-hdpi/values-normal-hdpi.xml -->
-    <eat-comment/>
-    <integer name="aviary_iap_dialog_height_weight">90</integer>
-</resources>

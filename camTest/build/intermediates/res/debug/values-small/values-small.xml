@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/camTest/build/intermediates/exploded-aar/CamTest/aviarySDK/unspecified/res/values-small/values-small.xml -->
-    <eat-comment/>
-    <dimen name="aviary_textSizeLarge">20sp</dimen>
-    <integer name="aviary_iap_dialog_height_weight">100</integer>
-    <integer name="aviary_iap_dialog_width_weight">100</integer>
-</resources>

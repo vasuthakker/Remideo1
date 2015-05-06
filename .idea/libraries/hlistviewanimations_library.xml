@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="hlistviewanimations-library">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/aviarySDK/libs/hlistviewanimations-library.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

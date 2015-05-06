@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CamTest.iml" filepath="$PROJECT_DIR$/CamTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aviarySDK/aviarySDK.iml" filepath="$PROJECT_DIR$/aviarySDK/aviarySDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Remideo.iml" filepath="$PROJECT_DIR$/Remideo.iml" />
       <module fileurl="file://$PROJECT_DIR$/camTest/camTest.iml" filepath="$PROJECT_DIR$/camTest/camTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/horizontalListView/horizontalListView.iml" filepath="$PROJECT_DIR$/horizontalListView/horizontalListView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tooltipLibrary/tooltipLibrary.iml" filepath="$PROJECT_DIR$/tooltipLibrary/tooltipLibrary.iml" />
     </modules>
   </component>
 </project>

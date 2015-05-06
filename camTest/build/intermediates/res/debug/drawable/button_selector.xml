@@ -6,4 +6,4 @@
     <item android:drawable="@drawable/deactiviate" android:state_pressed="false"></item>
     <item android:drawable="@drawable/deactiviate" android:state_focused="false"></item>
 
-</selector><!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/camTest/src/main/res/drawable/button_selector.xml -->
+</selector><!-- From: file:/C:/Users/viral.thakkar/AndroidStudioProjects/Remideo/camTest/src/main/res/drawable/button_selector.xml -->

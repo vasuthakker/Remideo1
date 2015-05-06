@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="cds">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/aviarySDK/libs/cds.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

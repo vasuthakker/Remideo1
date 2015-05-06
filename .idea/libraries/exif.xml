@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="exif">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/aviarySDK/libs/exif.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

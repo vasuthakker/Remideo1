@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="imagezoom">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/aviarySDK/libs/imagezoom.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

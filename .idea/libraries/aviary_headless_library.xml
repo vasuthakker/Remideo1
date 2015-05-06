@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="aviary-headless-library">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/aviarySDK/libs/aviary-headless-library.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

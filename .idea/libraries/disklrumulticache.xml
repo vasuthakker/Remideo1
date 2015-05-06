@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="disklrumulticache">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/aviarySDK/libs/disklrumulticache.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

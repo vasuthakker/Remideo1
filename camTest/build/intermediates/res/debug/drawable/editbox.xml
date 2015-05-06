@@ -5,4 +5,4 @@
     <item android:state_focused="true" android:drawable="@drawable/focus_text"/>
     <item android:drawable="@drawable/defedt"/>
 
-</selector><!-- From: file:/C:/Users/Vasu/StudioProjects/CamTest/camTest/src/main/res/drawable/editbox.xml -->
+</selector><!-- From: file:/C:/Users/viral.thakkar/AndroidStudioProjects/Remideo/camTest/src/main/res/drawable/editbox.xml -->
